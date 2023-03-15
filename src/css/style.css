@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -8,14 +8,12 @@
   --text-color: hsla(126, 23%, 49%);
   --title-color: hsla(210, 24%, 32%);
   --body-color: hsla(69, 49%, 89%);
-  ;
-
   /*========== Font and typography ==========*/
   --body-font: "Montserrat", sans-serif;
   --big-font-size: 32px;
   --biggest-font-size: 55px;
   --small-font-size: 15px;
-  
+
   /*========== Font weight ==========*/
   --font-regular: 400;
   --font-bold: 700;
@@ -45,14 +43,13 @@ img {
 }
 
 /*=============== HEADER ===============*/
-.header{
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
   color: var(--title-color);
-
 }
 
 .header .header-title {
@@ -122,6 +119,7 @@ input:checked + .slider:before {
   height: 29px;
   justify-content: space-evenly;
   align-items: center;
+  gap: .5rem;
 }
 
 span.monthly {
@@ -139,7 +137,6 @@ span.annually {
   align-items: center;
   row-gap: 2rem;
   margin-bottom: 2rem;
-
 }
 
 .card {
@@ -153,7 +150,7 @@ span.annually {
   row-gap: 2rem;
   padding: 2rem 0;
   box-shadow: 0 6px 24px hsla(0, 0%, 0%, 0.25);
-  cursor:pointer;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.25s ease-in-out;
 }
 
@@ -162,7 +159,6 @@ span.annually {
   box-shadow: 0 6px 50px hsla(0, 0%, 0%, 0.15);
 }
 
-
 .bike-icon-1 {
   width: 104px;
   height: 91px;
@@ -170,27 +166,23 @@ span.annually {
 .bike-icon-2 {
   width: 146px;
   height: 89px;
-
 }
 .bike-icon-3 {
   width: 159px;
   height: 89px;
-
 }
 
-.card-title{
+.card-title {
   color: var(--first-color);
   letter-spacing: 0.1rem;
 }
 
-
 .items {
   display: flex;
   flex-direction: column;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
   text-align: center;
   font-weight: 700;
-
 }
 
 .plan {
@@ -200,8 +192,7 @@ span.annually {
   column-gap: 1rem;
 }
 
-
-.price {
+.price1, .price2, .price3 {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-semi-bold);
 }
@@ -211,14 +202,32 @@ span.annually {
 }
 
 /*=============== BREAKPOINTS ===============*/
+/* For  small devices */
+@media screen and (max-width: 320px) {
+  :root {
+    --big-font-size: 28px;
+    --biggest-font-size: 40px;
+  }
+
+  .card {
+    width: 255px;
+    height: 400px;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+}
+
 /* For  meddium devices */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .card-container {
     flex-direction: row;
     justify-content: center;
     column-gap: 2rem;
   }
-  
+
   .card {
     width: 300px;
   }
