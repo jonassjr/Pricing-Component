@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== MAIN JS ===============-->
+  <script src="./src/Js/index.js" defer></script>
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <title>Pricing Component</title>
+</head>
+<body>
+  <main>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <h1 class="header-title">Our Pricing</h1>
+
+      <div class="toggle-switch">
+        <label class="switch">
+          <input type="checkbox" id="switch">
+          <div class="slider"> 
+            <p class="option">
+              <span class="monthly">Monthly</span>
+              <span class="annually">Annually</span>
+            </p>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <!--=============== CARDS ===============-->
+    <section class="card-container">
+      
+      <article class="card">
+        <img class="bike-icon-1" src="./src/img/bike-1.svg" alt="Bike icon 1">
+        <h3 class="card-title">BASIC</h3>
+        <ul class="items">
+          <li>1 User</li>
+          <li>Limeted Projects</li>
+          <li>100gb Storage</li>
+        </ul>
+        <h2 class="plan">&dollar; <p class="price">0</p> <span>MONTH</span></h2>
+      </article>
+      
+      <article class="card">
+        <img class="bike-icon-2" src="./src/img/bike-2.svg" alt="Bike icon 2">
+        <h3 class="card-title">PRO</h3>
+        <ul class="items">
+          <li>3 User</li>
+          <li>Unlimeted Projects</li>
+          <li>200gb Storage</li>
+        </ul>
+        <h2 class="plan">&dollar; <p class="price">39</p> <span>MONTH</span></h2>
+      </article>
+      
+      <article class="card">
+        <img class="bike-icon-3" src="./src/img/bike-3.svg" alt="Bike icon 3">
+        <h3 class="card-title">PREMIUM</h3>
+        <ul class="items">
+          <li>25 User</li>
+          <li>Unlimeted Projects</li>
+          <li>600gb Storage</li>
+        </ul>
+        <h2 class="plan">&dollar; <p class="price">99</p> <span>MONTH</span></h2>
+
+      </article>
+    </section>
+  </main>
+  
+</body>
+</html>
