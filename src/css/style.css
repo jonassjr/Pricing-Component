@@ -79,7 +79,6 @@ img {
 }
 
 .slider {
-  overflow: hidden;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -94,10 +93,10 @@ img {
 .slider:before {
   position: absolute;
   content: "";
-  height: 28px;
-  width: 85px;
-  left: 0;
-  bottom: 0;
+  height: 34px;
+  width: 88px;
+  left: -1px;
+  bottom: -3px;
   background-color: var(--title-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
