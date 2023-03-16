@@ -31,7 +31,7 @@ switchInput.addEventListener("change", function () {
 const sr = ScrollReveal();
 
 sr.reveal(".header", { origin: "top", distance: "30px", duration: 3000 });
-sr.reveal(".wraper", {
+sr.reveal(".wrapper", {
   origin: "bottom",
   distance: "20px",
   duration: 3000,
